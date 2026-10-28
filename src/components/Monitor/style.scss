@@ -1,0 +1,26 @@
+.monitor {
+  background-color: #000;
+  padding-top: 8px;
+  border-radius: 5px;
+
+  &__screen {
+    aspect-ratio: 16 / 9;
+    background-color: #fff;
+    margin: 0 4px;
+    padding: 2px;
+  }
+
+  &__bottom {
+    color: #fff;
+    font-size: 0.75rem;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__stand {
+    height: 50px;
+    aspect-ratio: 16 / 9;
+  }
+}

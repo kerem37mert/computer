@@ -1,15 +1,19 @@
-import type { ReactNode } from "react"; 
+import { useState, type ReactNode } from "react"; 
+import { Monitor } from "../../components";
 import "./style.scss";
 
 interface TComputerProps {
-  children: ReactNode,
+  
 };
 
 const Computer = (props: TComputerProps) => {
-  const { children } = props;
+
+  //const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div className="computer">{ children }</div>
+    <div className="computer">
+      <Monitor bottomText="keremmert.app"/>
+    </div>
   );
 };
 

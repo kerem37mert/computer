@@ -1,8 +1,11 @@
 import { Computer } from "./components";
+import "./app.scss";
 
 const App = () => {
   return (
-    <Computer />
+    <div className="app">
+      <Computer />
+    </div>
   );
 };
 
