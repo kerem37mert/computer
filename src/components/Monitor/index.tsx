@@ -1,3 +1,4 @@
+import { ProgramLauncher } from "../../components";
 import "./style.scss";
 
 interface TMonitorProps {
@@ -9,7 +10,9 @@ const Monitor = (props: TMonitorProps) => {
 
   return (
     <div className="monitor">
-      <div className="monitor__screen">sdf</div>
+      <div className="monitor__screen">
+        <ProgramLauncher />
+      </div>
       <div className="monitor__bottom">{ bottomText }</div>
     </div>
   );
