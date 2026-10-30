@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Close } from "../../icons";
 import type { TProgram } from "../../types";
 import "./style.scss";
