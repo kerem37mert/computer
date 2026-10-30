@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "icons": "svgr src/assets/icons -d src/icons --icon --ext tsx --typescript"
+    "icons": "svgr src/assets/icons -d src/icons --icon --ext tsx --typescript --jsx-runtime automatic"
   },
   "dependencies": {
     "react": "^19.3.1",
