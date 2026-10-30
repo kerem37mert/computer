@@ -1,6 +1,8 @@
+import "./style.scss";
+
 const Settings = () => {
   return (
-    <div>
+    <div className="settings">
       settings
     </div>
   );

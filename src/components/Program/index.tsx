@@ -24,6 +24,7 @@ const Program = (props: TProgramProps) => {
         />
        </div>
       </div>
+      <program.component />
     </div>
   );
 };
