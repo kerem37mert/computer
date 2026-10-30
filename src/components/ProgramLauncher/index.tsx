@@ -3,6 +3,7 @@ import { Home, Program } from "../../components";
 import { v4 } from 'uuid';
 import { Settings } from "../../programs";
 import { Close } from "../../icons";
+import { HomeProvider } from "../../contexts/HomeContext";
 import type { TProgram } from "../../types";
 import "./style.scss";
 
@@ -25,108 +26,6 @@ const programList: TProgram[] = [
 		icon: Close,
 		component: Settings,
 	},
-	{
-		id: v4(),
-		name: "Terminal",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Ayarlar",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Terminal",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Ayarlar",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Terminal",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Ayarlar",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Terminal",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Ayarlar",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Terminal",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Ayarlar",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Terminal",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Ayarlar",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Terminal",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Ayarlar",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Terminal",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Ayarlar",
-		icon: Close,
-		component: Settings,
-	},
-	{
-		id: v4(),
-		name: "Terminal",
-		icon: Close,
-		component: Settings,
-	},
 ];
 
 const ProgramLauncher = () => {
@@ -144,7 +43,9 @@ const ProgramLauncher = () => {
 					setOpenProgram={setOpenProgram}
 				/>
 			) : (
-				<Home programList={programList} setOpenProgram={setOpenProgram} />
+				<HomeProvider>
+					<Home programList={programList} setOpenProgram={setOpenProgram} />
+				</HomeProvider>
 			)}
 		</div>
 	);
