@@ -1,0 +1,38 @@
+.terminal {
+  background-color: #800080;
+  padding: 4px;
+  color: #fff;
+  flex: 1;
+
+  &__input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    input {
+      flex: 1;
+      background-color: #800080;
+      color: #fff;
+      caret-color: #fff;
+      font-size: 0.9rem;
+      width: 100%;
+      box-sizing: border-box;
+      outline: none;
+      border: none;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__history {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Home, Program } from "../../components";
 import { v4 } from 'uuid';
-import { Settings } from "../../programs";
+import { Settings, Terminal } from "../../programs";
 import { Close } from "../../icons";
 import { HomeProvider } from "../../contexts/HomeContext";
 import type { TProgram } from "../../types";
@@ -18,7 +18,7 @@ const programList: TProgram[] = [
 		id: v4(),
 		name: "Terminal",
 		icon: Close,
-		component: Settings,
+		component: Terminal,
 	},
 	{
 		id: v4(),

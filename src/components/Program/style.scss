@@ -1,4 +1,9 @@
 .program {
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -24,5 +29,10 @@
         }
       }
     }
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
   }
 }
