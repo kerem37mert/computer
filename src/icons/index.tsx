@@ -1,1 +1,12 @@
+export { default as Calculator } from "./Calculator";
+export { default as Camera } from "./Camera";
+export { default as Chrome } from "./Chrome";
+export { default as Clock } from "./Clock";
 export { default as Close } from "./Close";
+export { default as Gallery } from "./Gallery";
+export { default as Github } from "./Github";
+export { default as Linkedin } from "./Linkedin";
+export { default as Paint } from "./Paint";
+export { default as Settings } from "./Settings";
+export { default as Spotify } from "./Spotify";
+export { default as Terminal } from "./Terminal";
