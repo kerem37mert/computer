@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Home, Program } from "../../components";
 import { v4 } from 'uuid';
-import { Settings, Terminal } from "../../programs";
+import { Github, Settings, Terminal } from "../../programs";
 import {
 	Calculator as CalculatorIcon,
 	Camera as CameraIcon,
@@ -42,7 +42,7 @@ const programList: TProgram[] = [
 		id: v4(),
 		name: "Github",
 		icon: GithubIcon,
-		component: Settings,
+		component: Github,
 	},
 	{
 		id: v4(),
